@@ -7,3 +7,7 @@
 ### 删除永久代理
 
 删除环境变量即可
+
+
+
+**发现上述操作不一定生效，可以以管理员身份打开powershell然后设置： ```netsh winhttp set proxy 127.0.0.1:58591```, 端口改成实际端口**， 可以用过```netsh winhttp show proxy```查看是否已经设置代理， 通过```Invoke-WebRequest http://www.example.com/```查看代理是否设置成功， 可以使用```netsh winhttp reset proxy```取消设置的代理
